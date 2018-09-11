@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.ValidadorActivity">
+
+    <ImageView
+        android:id="@+id/logoId"
+        android:layout_width="@dimen/largura_logo"
+        android:layout_height="@dimen/altura_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtValidacaoInfoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:text="Validação"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:text="@string/info_validacao"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="15sp"
+        android:layout_marginRight="@dimen/cadastro_margin"
+        android:layout_marginLeft="@dimen/cadastro_margin"/>
+
+    <EditText
+        android:id="@+id/txtCodigoId"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="216dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/textColorPrimary"
+        android:hint="Digite seu código.."/>
+
+    <Button
+        android:id="@+id/btValidarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/textColorPrimary"
+        android:text="@string/botao_validar"
+        android:layout_marginLeft="@dimen/cadastro_margin"
+        android:layout_marginRight="@dimen/cadastro_margin"/>
+
+
+</RelativeLayout>
